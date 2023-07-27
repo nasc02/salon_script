@@ -1,9 +1,9 @@
 # salon_script
 
-Overview
+    Overview
 The code is a script named salon.sh that simulates a salon management system. It interacts with a PostgreSQL database named salon to handle customer appointments and services, it is a challenge necessary to complete the relational database course of FreeCodeCamp.
 
-Requirements
+    Requirements
 To run the script, you need to have PostgreSQL installed and a database named salon. The script should have executable permissions, which can be set using chmod +x salon.sh.
 
 You can rebuild the database by entering psql -U postgres < salon.sql
@@ -11,7 +11,7 @@ You can rebuild the database by entering psql -U postgres < salon.sql
     Database Setup
 The script connects to the PostgreSQL database using the username freecodecamp. Inside the database, it creates three tables: customers, appointments, and services. Each table has a primary key column named table_name_id that automatically increments. The appointments table has foreign keys customer_id and service_id referencing the corresponding columns from the customers and services tables.
 
-Script Execution
+    Script Execution
 The script starts by displaying a welcome message and a numbered list of services available in the salon. The list is fetched from the services table in the database.
 
 The user is prompted to enter the service ID they want to avail of. If an invalid service ID is provided, the script displays an error message and goes back to the main menu.
